@@ -1,48 +1,66 @@
-div:hover{
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
+ol.lista{
+    background-color: yellow;
 }
 
-
-
-div:nth-of-type(2){
-    background-color: red;
-}
-div:nth-of-type(3){
-    background-color: green;
-}
-div:nth-of-type(4){
-    background-color: pink;
-    font-size: 1.3em;
-}
-div:nth-of-type(5){
-    background-color: darkblue;
-    color: wheat;
-}
-div:nth-of-type(6){
-    background-color: wheat;
+ol li:nth-of-type(even){
+    color: green;
 }
 
-h3{
-    font-size: 50px;
+ol li:nth-of-type(odd){
+    text-transform: uppercase;
 }
 
-div:nth-of-type(odd){
-    font-style: italic;
+body{
+    font-size: 20px;
 }
 
-/* Parágrafos ímpares
-p:nth-of-type(2n+1) {
+h1, h3{
     color: red;
-  }
-  
-  /* Parágrafos pares
-  p:nth-of-type(2n) {
-    color: blue;
-  }
-  
-  /* Primeiro parágrafo
-  p:nth-of-type(1) {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
     font-weight: bold;
-  } */
+}
+
+ul.programacao li:nth-of-type(1){
+    color: blue;
+}
+ul.programacao li:nth-of-type(2){
+    color: blue;
+    background-color: pink;
+}
+ul.programacao li:nth-of-type(3){
+    color: blue;
+    background-color: pink;
+}
+
+ul.aliados li:nth-of-type(1) a:hover{
+    color: rgb(255, 199, 96);
+    font-weight: bold;
+}
+
+ul.aliados li:nth-of-type(2) a:hover{
+    color: green;
+    font-weight: bold;
+}
+
+ul.aliados li:nth-of-type(3) a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+ul.aliados li:nth-of-type(4) a:hover{
+    color: yellow;
+    font-weight: bold;
+}
+
+ul.aliados li:nth-of-type(5) a:hover{
+    color: green;
+    font-weight: bold;
+}
