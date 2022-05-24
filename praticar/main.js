@@ -15,18 +15,18 @@ function recebeTech (event){
     console.log(this.id);
     if (this.id === 'second-li') {
         event.target.className = "tech"
-        firstLi.className = ""
-        thirdLi.className = ""
+        firstLi.className = null
+        thirdLi.className = null
     }
     if (this.id === 'first-li') {
         event.target.className = "tech"
-        secondLi.className = ""
-        thirdLi.className = ""
+        secondLi.className = null
+        thirdLi.className = null
     }
     if (this.id === 'third-li') {
         event.target.className = "tech"
-        firstLi.className = ""
-        secondLi.className = ""
+        firstLi.className = null
+        secondLi.className = null
     }
 }
 firstLi.addEventListener('click', recebeTech)
