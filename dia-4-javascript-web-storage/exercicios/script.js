@@ -5,11 +5,11 @@ let buttonLine = document.querySelector('.buttonLineHeigth');
 let buttonFontFamily = document.querySelector('.buttonFontFamily');
 let cor = 'gray';
 
-buttonBG.addEventListener('click', setBG(cor));
 buttonColor.addEventListener('click', setColor);
 buttonFontSize.addEventListener('click', setFontSize);
 buttonLine.addEventListener('click', setLineHeigth);
 buttonFontFamily.addEventListener('click', setFontFamily);
+buttonBG.addEventListener('click', function () { setBG(cor); });
 
 function setBG(cor) {
     let body = document.querySelector('body');
