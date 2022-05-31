@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms viagem maluca</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Viagem mutcho loca Trybezada!</h1>
+    </header>
+    <form action="" method="get" id="form-viagem">
+      <label for="txt-nome">
+        Nome Completo:
+        <input
+          type="text"
+          name="nome"
+          id="txt-nome"
+          min="10"
+          max="40"
+          class="margin-bottom"
+        />
+      </label>
+      <br />
+      <label for="txt-email">
+        E-mail:
+        <input
+          type="email"
+          name="email"
+          id="txt-email"
+          min="10"
+          max="50"
+          class="margin-bottom"
+        />
+      </label>
+      <fieldset class="margin-bottom">
+        <legend>Destino Preferido</legend>
+        <label for="rad-cidade">
+          <input type="radio" name="destino" id="rad-cidade" />
+          Cidade
+        </label>
+        <label for="rad-campo">
+          <input type="radio" name="destino" id="rad-campo" />
+          Campo
+        </label>
+        <label for="rad-praia">
+          <input type="radio" name="destino" id="rad-praia" />
+          Praia
+        </label>
+        <label for="rad-montanha">
+          <input type="radio" name="destino" id="rad-montanha" />
+          Montanhas
+        </label>
+      </fieldset>
+      <p class="">
+        Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+        TrybeTrip?
+      </p>
+      <textarea
+        name="why"
+        id="txt-area-why"
+        cols="40"
+        rows="10"
+        maxlength="500"
+        class="margin-bottom"
+      ></textarea>
+      <br />
+      <label for="data">
+        Qual a melhor data para realizar sua viagem?
+        <input type="date" name="data" id="data" class="margin-bottom" />
+      </label>
+      <br />
+      <button type="submit" id="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
