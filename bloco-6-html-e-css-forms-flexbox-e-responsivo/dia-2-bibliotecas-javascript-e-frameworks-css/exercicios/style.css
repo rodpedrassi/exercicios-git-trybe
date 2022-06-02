@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+html{
+    background-color: #22272e ;
+    margin: 0;
+    height: 100%;
+}
+header, .form-viagem{
+    background-color: #2d333b;
+    padding: 20px;
+    width: 70%;
+    max-width: 70%;
+    margin: 20px auto;
+    border: solid 1px rgb(212, 208, 208);
+
+}
+
+header{
+text-align: center;
+}
+
+.label, .checkbox, .radio{
+    color: #adb4bb;
+}
+
+.title{
+    color: white;
+}
+
+.checkbox:hover, .radio:hover {
+    color: white;
+}
