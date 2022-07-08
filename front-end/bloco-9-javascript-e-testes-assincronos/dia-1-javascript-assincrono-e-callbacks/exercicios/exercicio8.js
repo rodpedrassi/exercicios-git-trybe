@@ -36,7 +36,7 @@ function getPokemonDetails(filter, callback) {
 }
 const filter = (pokemon) => pokemon.name === 'Bulbasaur';
 getPokemonDetails(filter, (erro, msg) => {
-  erro === null ? console.log(msg) : console.log(msg);
+  erro === null ? console.log(msg) : console.log(erro);
 });
 
 module.exports = {
