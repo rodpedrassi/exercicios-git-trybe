@@ -11,6 +11,11 @@ export default class Forms extends Component {
     this.setState({
       [name]: value,
     });
+    if (name === 'nome') {
+      this.setState({
+        [name]: value.toUpperCase(),
+      });
+    }
   };
 
   handleClick = (event) => {
